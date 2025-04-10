@@ -1,0 +1,21 @@
+.skills-first{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+@media (max-width: 768px) {
+    .skills-first{
+        grid-template-columns: 1fr; 
+    }
+}
+
+.skills-second{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+@media (max-width: 768px) {
+    .skills-second{
+        grid-template-columns: 1fr; 
+    }
+}

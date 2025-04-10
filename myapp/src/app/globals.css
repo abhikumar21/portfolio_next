@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+:root {
+  --primary: #830ee9;
+  --background: #0f172a;
+  --foreground: #f8fafc;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-md transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-violet-500 hover:bg-violet-600 text-white;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
