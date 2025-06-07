@@ -1,4 +1,5 @@
 // app/components/Projects.jsx
+import { backGradientColor, textGradientColor } from '@/utils/classNames';
 import Image from 'next/image';
 
 export default function Projects() {
@@ -6,48 +7,48 @@ export default function Projects() {
     {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce platform with product management, user authentication, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Express.js", "Stripe API"],
-      imageUrl: "/placeholder-1.jpg",
+      technologies: ["React", "Node.js", "MongoDB", "Express.js", "Redux Toolkit", "Cloudinary", "Razorpay"],
+      imageUrl: "/projects/p11.png",
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
     },
     {
-      title: "AI Image Generator",
-      description: "A deep learning application that generates unique images based on text descriptions.",
-      technologies: ["Python", "TensorFlow", "React", "Flask", "AWS"],
-      imageUrl: "/placeholder-2.jpg",
+      title: "Data Structure and Algorithm Visualizer",
+      description: "An interactive web application that visualizes various data structures and algorithms in real-time.",
+      technologies: ["React", "Javascript", "D3.js"],
+      imageUrl: "/projects/p12.png",
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
     },
     {
-      title: "Real-time Chat Application",
-      description: "A real-time messaging application with features like group chats, file sharing, and end-to-end encryption.",
-      technologies: ["React", "Socket.io", "Node.js", "Redis", "MongoDB"],
-      imageUrl: "/placeholder-3.jpg",
+      title: "Social Media Application",
+      description: "A social media platform with features like user profiles, authentication, posts, comments and real-time chat.",
+      technologies: ["React", "Socket.io", "Node.js", "Redux", "MongoDB"],
+      imageUrl: "/projects/p13.png",
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
     },
     {
-      title: "Portfolio Website",
-      description: "A responsive developer portfolio website built with Next.js and Tailwind CSS.",
-      technologies: ["Next.js", "Tailwind CSS", "React", "Framer Motion"],
-      imageUrl: "/placeholder-4.jpg",
+      title: "Code Editor",
+      description: "A html, css & javascript code editor using Next js.",
+      technologies: ["Next.js", "Tailwind CSS"],
+      imageUrl: "/projects/p15.png",
+      githubUrl: "https://github.com",
+      liveUrl: "https://example.com"  
+    },
+    {
+      title: "Canteen Management System",
+      description: "A web application for managing canteen operations, including order management and inventory tracking.",
+      technologies: ["React", "Django", "Sendgrid", "Sqlite", "Tailwind"],
+      imageUrl: "/projects/p14.png",
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
     },
     {
-      title: "Sentiment Analysis Tool",
-      description: "A machine learning model that analyzes sentiment in customer reviews and feedback.",
-      technologies: ["Python", "NLTK", "Scikit-learn", "Flask", "React"],
-      imageUrl: "/placeholder-5.jpg",
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
-    },
-    {
-      title: "Inventory Management System",
-      description: "A comprehensive inventory management system for small to medium-sized businesses.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Express.js", "Chart.js"],
-      imageUrl: "/placeholder-6.jpg",
+      title: "Heritage Site Virtual Tour",
+      description: "A virtual tour application showcasing heritage sites with 360-degree views and information.",
+      technologies: ["Unity 3D", "C#", "WebGL", "Blender"],
+      imageUrl: "/projects/p16.png",
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
     }
@@ -57,8 +58,8 @@ export default function Projects() {
     <section id="projects" className="section bg-slate-900">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Featured <span className="text-violet-500">Projects</span></h2>
-          <div className="w-20 h-1 bg-violet-500 mx-auto"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Featured <span className={`${textGradientColor}`}>Projects</span></h2>
+          <div className={`w-20 h-1 mx-auto ${backGradientColor}`}></div>
           <p className="text-gray-300 mt-6">
             Here are some of my recent projects that showcase my skills and expertise.
           </p>
@@ -67,10 +68,8 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-slate-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
-              <div className="h-48 bg-slate-700 relative">
-                <div className="w-full h-full bg-violet-500/10 flex items-center justify-center text-4xl text-violet-400">
-                {project.title.split(' ')[0]}
-                </div>
+              <div className="h-[260px] overflow-hidden relative px-3 pt-3">
+                <img className='' src={project.imageUrl} alt="" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import './Skills.css'
+import { backGradientColor, textGradientColor } from '@/utils/classNames';
 
 
 export default function Skills() {
@@ -43,18 +44,18 @@ export default function Skills() {
 
   
     return (
-      <section className="skills bg-slate-900">
+      <section id="skills" className="section bg-slate-900">
         <div className="container">
           <div className="mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">My Tech <span className="text-violet-500">Stack</span></h2>
-            <div className="w-20 h-1 bg-violet-500 mx-auto"></div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">My Tech <span className={textGradientColor}>Stack</span></h2>
+            <div className={`w-20 h-1 mx-auto ${backGradientColor}`}></div>  
 
             <div className="skills-first gap-8 mt-8">
             {
               Object.entries(skills1)  // converts the object into an array of [key, value] pairs
               .map(([category, skillList], index) => {
                 return (
-                  <div key={index} className="w-full bg-slate-700 rounded-md">
+                  <div key={index} className="w-full bg-slate-800 rounded-md">
                     <h3 className="text-2xl font-bold mb-5 mt-6">{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
                     <div className="flex flex-wrap justify-center mb-3">
                     {skillList.map((skill, skillIndex) => {
@@ -83,7 +84,7 @@ export default function Skills() {
               Object.entries(skills2)  // converts the object into an array of [key, value] pairs
               .map(([category, skillList], index) => {
                 return (
-                  <div key={index} className="w-full bg-slate-700 rounded-md">
+                  <div key={index} className="w-full bg-slate-800 rounded-md">
                     <h3 className="text-2xl font-bold mb-5 mt-6">{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
                     <div className="flex flex-wrap justify-center mb-3">
                     {skillList.map((skill, skillIndex) => {

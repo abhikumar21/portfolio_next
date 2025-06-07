@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Threed from './Threed'; // Assuming you have a 3D component for the image
+import { textGradientColor, backGradientColor } from '@/utils/classNames';
 
 
 export default function Hero() {  
@@ -8,17 +9,17 @@ export default function Hero() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 xl:flex xl:flex-col xl:items-end">
-            <h2 className="text-violet-400 font-bold text-xl md:text-2xl">Hello, I'm</h2>
+            <h2 className={`font-bold text-xl md:text-2xl ${textGradientColor}`}>Hello, I'm</h2>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight my-0">
               Abhishek Kumar
             </h1>
-            <h2 className="text-violet-500 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Software Developer</h2>
-            <p className="text-lg text-gray-300 max-w-lg">
+            <h2 className={`${textGradientColor} text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight`}>Software Developer</h2>
+            <p className="text-lg text-gray-300 max-w-lg xl:text-right">
               I build exceptional digital experiences with expertise in full-stack development and machine learning.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="btn btn-primary">Contact Me</a>
-              <a href="#projects" className="btn border border-violet-500 text-violet-400 hover:bg-violet-500/10">View Projects</a>
+              <a href="" className={`btn btn-primary text-black ${backGradientColor}`}>Resume</a>
+              <a href="#projects" className={`btn border ${textGradientColor}`}>View Projects</a>
             </div>
             <div className="flex gap-4 pt-4">
               <a href="https://github.com/abhikumar21" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-white transition-colors">

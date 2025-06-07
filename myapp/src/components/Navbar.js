@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { textGradientColor, hoverWhiteText, backGradientColor } from '@/utils/classNames';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,17 +20,17 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/90 backdrop-blur-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container flex justify-between items-center">
         <Link href="/">
-          <span className="text-2xl font-bold text-violet-500 tracking-wider">ab<span className="text-white">Hi</span>shek</span>
+          <span className={`text-2xl font-bold tracking-wider`}>Hi !!</span>
         </Link>
         
         {/* Desktop Menu */}  
         <div className="hidden md:flex space-x-8">
           {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
             <Link key={item} href={`#${item.toLowerCase()}`}>
-              <span className="text-gray-300 hover:text-violet-400 transition-colors">{item}</span>
+              <span className={`text-gray-300 transition-colors ${hoverWhiteText}`}>{item}</span>
             </Link>
           ))}
-          <a href="/resume.pdf" className="btn btn-primary">Resume</a>
+          <a href="/resume.pdf" className={`btn btn-primary text-black ${backGradientColor}`}>Resume</a>
         </div>
         
         {/* Mobile Menu Button */}
