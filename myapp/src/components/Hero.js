@@ -5,7 +5,8 @@ import { textGradientColor, backGradientColor } from '@/utils/classNames';
 
 export default function Hero() {  
   return (
-    <section id="home" className="section pt-28 md:pt-36 min-h-screen flex items-center">
+    <>
+    <section id="home" className="section pt-28 md:pt-36 min-h-screen flex flex-col items-center">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 xl:flex xl:flex-col xl:items-end">
@@ -49,5 +50,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }

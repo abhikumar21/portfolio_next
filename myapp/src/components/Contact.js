@@ -2,6 +2,8 @@
 // app/components/Contact.jsx
 "use client";
 
+import { backGradientColor, textGradientColor } from "@/utils/classNames";
+
 export default function Contact() {
 
 
@@ -59,14 +61,14 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In <span className="text-violet-500">Touch</span></h2>
-          <div className="w-20 h-1 bg-violet-500 mx-auto"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In <span className={`${textGradientColor}`}>Touch</span></h2>
+          <div className={`w-20 h-1 mx-auto ${backGradientColor}`}></div>
           <p className="text-gray-300 mt-6">
             Have a project in mind or want to learn more about my work? Feel free to reach out!
           </p>
         </div>
 
-        <div className="contact-details flex justify-center items-center flex-wrap gap-20 pb-[150px] pt-[50px]">
+        <div className="contact-details flex justify-center items-center flex-wrap gap-20 pb-[60px] pt-[40px]">
          { icons.map((item, index) => (
           <div key={index} className="card bg-slate-600 h-[160px] w-[160px] flex justify-center items-center rounded-2xl">
             <div className="circular-container h-1/2 w-1/2 flex justify-center items-center rounded-full bg-black" style={{filter: `drop-shadow(0 0 5px ${item.color})`}} >
@@ -76,13 +78,6 @@ export default function Contact() {
             </div>
           </div>
           ))}    
-        </div>
-
-        <div className="footer">
-          <hr className='border-1 border-gray-700' />
-          <div className="footer-test flex justify-center items-center gap-2 text-gray-400 text-sm pt-8">
-           <span>© 2025 Abhishek Kumar. All rights reserved</span>
-          </div>
         </div>
 
       </div>

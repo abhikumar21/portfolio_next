@@ -6,7 +6,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Threed from '../components/Threed';
 import Journey from '../components/Journey';
-// import Footer from './components/Footer';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
