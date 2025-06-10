@@ -24,13 +24,13 @@ export default function Navbar() {
         </Link>
         
         {/* Desktop Menu */}  
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 lg:mr-10">
           {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
             <Link key={item} href={`#${item.toLowerCase()}`}>
               <span className={`text-gray-300 transition-colors ${hoverWhiteText}`}>{item}</span>
             </Link>
           ))}
-          <a href="/resume.pdf" className={`btn btn-primary text-black ${backGradientColor}`}>Resume</a>
+          {/* <a href="/resume.pdf" className={`btn btn-primary text-black ${backGradientColor}`}>Resume</a> */}
         </div>
         
         {/* Mobile Menu Button */}
@@ -55,7 +55,7 @@ export default function Navbar() {
               <span className="block py-2 text-gray-300 hover:text-violet-400 transition-colors">{item}</span>
             </Link>
           ))}
-          <a href="/resume.pdf" className="btn btn-primary text-center" onClick={() => setMenuOpen(false)}>Resume</a>
+          {/* <a href="/resume.pdf" className="btn btn-primary text-center" onClick={() => setMenuOpen(false)}>Resume</a> */}
         </div>
       )}
     </nav>

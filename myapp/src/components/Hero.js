@@ -19,7 +19,7 @@ export default function Hero() {
               I build exceptional digital experiences with expertise in full-stack development and machine learning.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="" className={`btn btn-primary text-black ${backGradientColor}`}>Resume</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1ZDK4gVn5r8LjbgFodV4WmufwponfDEWy/view?usp=sharing" className={`btn btn-primary text-black ${backGradientColor}`}>Resume</a>
               <a href="#projects" className={`btn border ${textGradientColor}`}>View Projects</a>
             </div>
             <div className="flex gap-4 pt-4">

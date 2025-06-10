@@ -20,6 +20,7 @@ export default function Skills() {
       { name: "Redux Toolkit", icon: "/skill/redux.png" },
     ],
     backend: [
+      { name: "Django", icon: "/skill/django.png" },
       { name: "Node.js", icon: "/skill/node.png" },
       { name: "Express.js", icon: "/skill/express.png" },
       { name: "MongoDB", icon: "/skill/mongodb.png" },
