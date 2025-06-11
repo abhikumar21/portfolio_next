@@ -5,7 +5,7 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Threed from '../components/Threed';
-import Journey from '../components/Journey';
+// import Journey from '../components/Journey';
 import Footer from '../components/Footer';
 
 export default function Home() {
