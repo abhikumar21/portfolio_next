@@ -115,7 +115,7 @@ const tools = {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce platform with product management, user authentication, and payment integration.",
       technologies: ["react", "node", "Mongo", "express", "reduxToolkit", "cloudinary", "razorpay"],
-      imageUrl: "/projects/p11.png",
+      imageUrl: "./projects/p11.png",
       githubUrl: "https://github.com/abhikumar21/E-CommerceApp",
       liveUrl: ""
     },
@@ -123,7 +123,7 @@ const tools = {
       title: "Data Structure and Algorithm Visualizer",
       description: "An interactive web application that visualizes various data structures and algorithms in real-time.",
       technologies: ["react", "d3", "js"],
-      imageUrl: "/projects/p12.png",
+      imageUrl: "./projects/p12.png",
       githubUrl: "https://github.com/abhikumar21/DSA_Visualizer",
       liveUrl: ""
     },
@@ -131,7 +131,7 @@ const tools = {
       title: "Social Media Application",
       description: "A social media platform with features like user profiles, authentication, posts, comments and real-time chat.",
       technologies: ["react", "socket", "node", "redux", "mongo"],
-      imageUrl: "/projects/p13.png",
+      imageUrl: "./projects/p13.png",
       githubUrl: "https://github.com/abhikumar21/social_ring",
       liveUrl: ""
     },
@@ -139,7 +139,7 @@ const tools = {
       title: "Code Editor",
       description: "A html, css & javascript code editor using Next js.",
       technologies: ["next", "tailwind"],
-      imageUrl: "/projects/p15.png",
+      imageUrl: "./projects/p15.png",
       githubUrl: "https://github.com",
       liveUrl: ""  
     },
@@ -147,7 +147,7 @@ const tools = {
       title: "Canteen Management System",
       description: "A web application for managing canteen operations, including order management and inventory tracking.",
       technologies: ["react", "django", "sendgrid", "sqlite", "tailwind"],
-      imageUrl: "/projects/p14.png",
+      imageUrl: "./projects/p14.png",
       githubUrl: "",
       liveUrl: ""
     },
@@ -155,7 +155,7 @@ const tools = {
       title: "Heritage Site Virtual Tour",
       description: "A virtual tour application showcasing heritage sites with 360-degree views and information.",
       technologies: ["unity", "csharp", "Webgl", "blender"],
-      imageUrl: "/projects/p16.png",
+      imageUrl: "./projects/p16.png",
       githubUrl: "",
       liveUrl: ""
     }
