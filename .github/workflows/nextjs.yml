@@ -24,19 +24,17 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          cd myapp
-          if [ -f "yarn.lock" ]; then
+          if [ -f "myapp/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
-          elif [ -f "package.json" ]; then
+          elif [ -f "myapp/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
           else
             echo "Unable to determine package manager"
             exit 1
-
 
       - name: Setup Node
         uses: actions/setup-node@v4
