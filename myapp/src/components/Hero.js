@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 xl:flex xl:flex-col xl:items-end">
-            <h2 className={`font-bold text-xl md:text-2xl ${textGradientColor}`}>Hello, I'm</h2>
+            <h2 className={`font-bold text-xl md:text-2xl ${textGradientColor}`}>Hello, I&apos;m</h2>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight my-0">
               Abhishek Kumar
             </h1>
