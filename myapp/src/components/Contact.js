@@ -72,10 +72,10 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="contact-details flex justify-center items-center flex-wrap gap-20 pb-[60px] pt-[40px]">
-         { icons.map((item, index) => (
-          <a href={item?.urlPath} target="_blank" key={index} className="card bg-slate-600 h-[160px] w-[160px] flex justify-center items-center rounded-2xl">
-            <div className="circular-container h-1/2 w-1/2 flex justify-center items-center rounded-full bg-black" style={{filter: `drop-shadow(0 0 5px ${item.color})`}} >
+        <div className="contact-details flex justify-center items-center flex-wrap gap-10 md:gap-20 pb-[60px] pt-[40px] md:px-[200px] lg:px-0">
+         { icons.map((item, index) => ( 
+          <a href={item?.urlPath} target="_blank" key={index} className="card bg-slate-600 h-[100px] w-[100px] md:h-[120px] md:w-[120px] flex justify-center items-center rounded-2xl">
+            <div className="circular-container h-2/3 w-2/3 md:h-1/2 md:w-1/2 flex justify-center items-center rounded-full bg-black" style={{filter: `drop-shadow(0 0 5px ${item.color})`}} >
               <svg xmlns="http://www.w3.org/2000/svg" fill={item.color} className={`h-10 w-10`} viewBox="0 0 24 24">
                   <path d={item.path}/>
               </svg>
